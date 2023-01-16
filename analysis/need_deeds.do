@@ -9,7 +9,7 @@ set scheme s2mono
 
 
 /* reshape long */
-use "need_deeds_wide.dta", clear
+use "data_wide.dta", clear
 
 reshape long ///
    allocation_a_low_under_ need_a_low_under_ allocation_b_low_under_ need_b_low_under_ ///
@@ -74,12 +74,12 @@ label variable treatment "Kind of Need"
 replace case = case + 5 if supply_situation == 2
 replace case = case + 10 if accountability == 2
 
-save "need_deeds_long.dta", replace
+save "data_long.dta", replace
 export delimited "need_deeds_long.csv", replace
 
 
 /* quality fails */
-use "need_deeds_wide.dta", clear
+use "data_wide.dta", clear
 
 drop if dropout == 1 | quota_full == 1 | screenout == 1
 
@@ -150,7 +150,7 @@ tab income_quota quality_fail, chi
 
 
 /* figure 1 */
-use "need_deeds_long.dta", clear
+use "data_long.dta", clear
 
 label define treatment_lb 1 "Survival" 2 "Decency" 3 "Belonging" 4 "Autonomy"
    label value treatment treatment_lb
@@ -199,7 +199,7 @@ cibar share_a, over(supply_situation treatment) ///
 
 
 /* test supply scenario */
-use "need_deeds_wide.dta", clear
+use "data_wide.dta", clear
 
 keep if complete == 1
 
@@ -260,7 +260,7 @@ restore
 
 
 /* figure 4 */
-use "need_deeds_long.dta", clear
+use "data_long.dta", clear
 
 keep if complete == 1
 
@@ -274,7 +274,7 @@ cibar share_a, over(accountability treatment) ///
 
 
 /* test accountability */
-use "need_deeds_wide.dta", clear
+use "data_wide.dta", clear
 
 keep if complete == 1
 
@@ -328,7 +328,7 @@ preserve
    }
 restore
 
-use "need_deeds_long.dta", clear
+use "data_long.dta", clear
 
 keep if complete == 1
 keep if accountability == 1
@@ -342,7 +342,7 @@ forval i = 1/4 {
 
 
 /* test kind of need */
-use "need_deeds_long.dta", clear
+use "data_long.dta", clear
 
 keep if complete == 1
 
@@ -398,7 +398,7 @@ lrtest model_7 model_8, force
 
 
 /* figure 5 */
-use "need_deeds_wide.dta", clear
+use "data_wide.dta", clear
 
 keep if complete == 1
 
