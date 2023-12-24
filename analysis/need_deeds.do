@@ -428,5 +428,4 @@ cibar eval, over(kindofneed) ///
 /* test evaluations */
 oneway eval kindofneed, bonferroni tabulate
 
-
 exit
