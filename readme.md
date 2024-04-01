@@ -1,6 +1,6 @@
 # Equal Deeds, Different Needs
 
-This is a repository for the paper “Equal Deeds, Different Needs” by [Jan Romann](https://github.com/JKRhb) and me, forthcoming in _Oxford Studies in Experimental Philosophy_.[^1]
+This is a repository for the chapter “Equal Deeds, Different Needs” by [Jan Romann](https://github.com/JKRhb) and me, forthcoming in _Oxford Studies in Experimental Philosophy_.[^1]
 
 - The _Oxford Studies in Experimental Philosophy_ preprint is available in `/preprint`.
 - Data can be found in `/analysis`, along with a do file for analysis with Stata (version 14.2).
