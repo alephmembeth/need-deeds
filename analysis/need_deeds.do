@@ -1,6 +1,3 @@
-cd "/Users/amb/Desktop/GitHub/need-deeds/analysis"
-
-
 /* header */
 version 14.2
 
@@ -261,6 +258,9 @@ restore
 
 /* figure 4 */
 use "data_long.dta", clear
+
+label define treatment_lb 1 "Survival" 2 "Decency" 3 "Belonging" 4 "Autonomy"
+   label value treatment treatment_lb
 
 keep if complete == 1
 
