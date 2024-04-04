@@ -5,4 +5,4 @@ This is a repository for the chapter “Equal Deeds, Different Needs” by [Jan 
 - The _Oxford Studies in Experimental Philosophy_ preprint is available in `/preprint`.
 - Data can be found in `/analysis`, along with a do file for analysis with Stata (version 14.2).
 
-[^1]: Bauer, Alexander Max, and Jan Romann (forthcoming): “Equal Deeds, Different Needs. Need, Accountability, and Ressource Availability in Third-Party Distribution Decisions”. In: Joshua Knobe, Tania Lombrozo, and Shaun Nichols (eds.): _Oxford Studies in Experimental Philosophy_. Vol. 5. Oxford: Oxford University Press.
+[^1]: Bauer, Alexander Max, and Jan Romann (forthcoming): “Equal Deeds, Different Needs. Need, Accountability, and Ressource Availability in Third-Party Distribution Decisions”. In: Joshua Knobe and Shaun Nichols (eds.): _Oxford Studies in Experimental Philosophy_. Vol. 5. Oxford: Oxford University Press, 7–31.
